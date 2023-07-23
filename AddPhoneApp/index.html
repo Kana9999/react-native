@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+
+    <div id="mydiv"></div>
+
+    <script type="text/babel">
+      function HomePage() {
+ 
+        return(
+          
+       <div>
+        <h1>home</h1>
+        <a class="active" href="Addphonebook.html">AddPhoneBook</a>
+        <a class="active" href="AddEntry.html">Add Entry</a>
+        <a class="active" href="index.html">home</a>
+
+        
+
+          
+          <form>
+  
+    
+  <br />
+  
+  <label for="PhoneBook">PhoneBook:</label>
+  <select name="PhoneBook">
+    <option value="">Please select one…</option>
+    <option value="PhoneBook">General</option>
+    <option value="PhoneBook">eblock</option>
+    <option value="PhoneBook">test</option>
+    <option value="PhoneBook">blocker</option>
+    <option value="PhoneBook">j</option>
+    <option value="PhoneBook">Sdu</option>
+    <option value="PhoneBook">TestDez</option>
+  </select>
+
+  <p><label for="first-name">First Name:</label></p>
+  <input type="text" name="first-name" />
+
+  <p><label for="first-name">Number:</label></p>
+  <input type="text" name="first-name" />
+
+      <p>
+        <button type="button" id="btn1" value="save">Save</button>
+        <button type="button" id="btn2" >cancel</button>
+      </p>
+
+</form>
+
+</div>
+    
+        
+      );
+        
+      }
+      
+      const container = document.getElementById('mydiv');
+      const root = ReactDOM.createRoot(container);
+      root.render(<HomePage />)
+    </script>
+
+  </body>
+</html>

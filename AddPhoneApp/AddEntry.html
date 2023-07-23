@@ -1,0 +1,66 @@
+
+<html>
+    <head>
+        <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+      </head>
+<body>
+  <div class="topnav">
+    <a class="active" href="Addphonebook.html">AddPhoneBook</a>
+    <a class="active" href="AddEntry.html">Add Entry</a>
+    <a class="active" href="index.html">home</a>
+  </div>
+
+ 
+
+
+  <form action="/index.html>
+  
+    
+    <br />
+    
+    <label for="PhoneBook">Gender:</label>
+    <select name="PhoneBook">
+      <option value="">Please select one…</option>
+      <option value="PhoneBook">General</option>
+      <option value="PhoneBook">eblock</option>
+      <option value="PhoneBook">test</option>
+      <option value="PhoneBook">blocker</option>
+      <option value="PhoneBook">j</option>
+      <option value="PhoneBook">Sdu</option>
+      <option value="PhoneBook">TestDez</option>
+    </select>
+
+    <p><label for="tbuser" id="tbuser">First Name:</label></p>
+    <input type="text" id="tbuser" placeholder="Enter Name"/>
+
+    <p><label for="Number">Number:</label></p>
+    <input type="number" name="number" />
+     <p>
+        <button type="button" id="btn1" value="save">Save</button>
+        <button type="button" id="btn2" >cancel</button>
+     <p>
+
+      <p class="output" id="output1">waiting</p>
+  </form>
+
+  <script>
+    const tet1=document.getElementById('tbuser');
+    const btn1=document.getElementById('btn1');
+    const out1=document.getElementById('output1');
+     
+    function displayInfo(){
+    out1.innerHTML=tet1.value;
+    
+    }
+    
+     btn1.addEventListener('click',displayInfo);
+  
+    </script>
+   <article>
+   <p class="output" id="output1">waiting</p>
+   </article>
+
+</body>
+</html>
